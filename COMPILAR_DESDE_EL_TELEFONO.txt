@@ -1,0 +1,12 @@
+PAN — crear APK usando GitHub Actions desde el teléfono
+
+1. En el navegador del teléfono abre https://github.com y crea/inicia sesión.
+2. Crea un repositorio nuevo (por ejemplo PAN-Android). Puedes dejarlo privado.
+3. Descomprime este ZIP usando la app Archivos del teléfono.
+4. En GitHub, abre el repositorio > Add file > Upload files. Sube el CONTENIDO de la carpeta PAN_Android (incluida la carpeta oculta .github; si la app web no permite subir carpetas, usar GitHub Desktop/PC será necesario o usar github.dev).
+5. Confirma con Commit changes.
+6. Abre la pestaña Actions > Build PAN APK. Si el workflow no inicia automáticamente, pulsa Run workflow.
+7. Espera a que termine en verde. Abre la ejecución y descarga el artefacto PAN-debug-apk.
+8. Descomprime el ZIP descargado; contiene app-debug.apk. Ábrelo para instalar.
+
+NOTA: GitHub Actions requiere una cuenta y disponibilidad de Actions. El APK de depuración es para instalar/pruebas. No compartas secretos. Este flujo no firma un APK de publicación.
